@@ -34,3 +34,15 @@ else
       localStorage.setItem('All cities', JSON.stringify(cityNames)); 
       cityBtns();  
     }
+
+    function cityBtns(){
+        searchResults.innerHTML=""
+        for (var i = 0; i < cityNames.length; i ++) {
+          let newCityBtn =  document.createElement("button")
+          newCityBtn.setAttribute("type", "button")
+          newCityBtn.setAttribute("class","btn btn-primary m-1 cityBtn");
+          newCityBtn.innerText = cityNames[i]
+          searchResults.prepend(newCityBtn)
+        }
+      
+          }
