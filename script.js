@@ -25,3 +25,12 @@ if(JSON.parse(localStorage.getItem('All cities')))
   cityNames=JSON.parse(localStorage.getItem('All cities'))
 else
   cityNames = []
+  searchBtn.addEventListener('click',(e)=>{
+    e.preventDefault()
+    cityName = document.querySelector('#citySearch').value;
+    console.log(cityName);
+    if(cityName){
+      cityNames.push(cityName)
+      localStorage.setItem('All cities', JSON.stringify(cityNames)); 
+      cityBtns();  
+    }
