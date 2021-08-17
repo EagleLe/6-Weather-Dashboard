@@ -19,3 +19,9 @@ const eachDay = document.getElementById('eachDay')
 const eachDayTemp = document.getElementById('eachDayTemp')
 const eachDayHumidity = document.getElementById('eachDayHumidity')
 const eachDayWind = document.getElementById('eachDayWind')
+
+let cityName =null;
+if(JSON.parse(localStorage.getItem('All cities')))
+  cityNames=JSON.parse(localStorage.getItem('All cities'))
+else
+  cityNames = []
