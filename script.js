@@ -36,7 +36,7 @@ searchBtn.addEventListener('click',(e)=>{
       localStorage.setItem('All cities', JSON.stringify(cityNames)); 
       cityBtns();  
     }
-    onsole.log(cityName);
+    console.log(cityName);
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKey}`).then((response)=>{
       return response.json();
     }).then(data=>{
@@ -113,7 +113,7 @@ searchBtn.addEventListener('click',(e)=>{
   
     })
   })
-  
+
     function cityBtns(){
         searchResults.innerHTML=""
         for (var i = 0; i < cityNames.length; i ++) {
