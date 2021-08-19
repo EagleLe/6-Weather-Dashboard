@@ -11,6 +11,6 @@ This application user were able to enter a city name in the search bar. This wou
   
 ## Screenshots
 
-![App Screenshot]![image](https://user-images.githubusercontent.com/85507148/130022181-1573be05-e27e-4758-aaf3-2a4214d778e9.png)
+[image](https://user-images.githubusercontent.com/85507148/130022181-1573be05-e27e-4758-aaf3-2a4214d778e9.png)
 
   
